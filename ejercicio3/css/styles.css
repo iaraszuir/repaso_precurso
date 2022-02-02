@@ -5,31 +5,53 @@
     box-sizing: border-box;
 }
 
-body div.caja1{
-    background-color: green;
-    width: 150px;
-    height: 150px;
-    border-radius: 30% ;
-    transform: translateX(400px)translateY(-50px);
+.semaforo{
+    max-width: 500px;
+    margin: 40px auto;
+
 }
-body div.caja2{
-    background-color: green;
-    width: 250px;
-    height: 250px;
-    transform: translateX(400px);
+.semaforo div{
+    margin: 0 auto;
 }
-body div.caja3{
+.semaforo>div {
     background-color: green;
-    width: 400px;
+}
+.semaforo .semicirculo{
+width: 30%;
+height: 25px;
+border-radius: 20% 20% 0 0;
+}
+.semaforo .copete{
+    width: 50%;
+    height: 30px;
+}
+.semaforo .cuerpo{
+    width: 70%;
+    padding: 20px;
+}
+.semaforo .cuerpo div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.semaforo .cuerpo div:first-child {
+    background-color: red;
+}
+
+.semaforo .cuerpo div:last-child {
+    background-color: lightgreen;
+}
+
+.semaforo .cuerpo div:nth-child(2) {
+    background-color: yellow;
+}
+.semaforo .pata {
     height: 400px;
+    width: 30px;
 }
-body div.caja4{
-    background-color: green;
-    width: 50px;
-    height: 400px;
-}
-body div.caja5{
-    background-color: green;
-    width: 250px;
-    height: 50px;
+
+.semaforo>div:last-child {
+    width: 70%;
+    height: 30px;
 }
