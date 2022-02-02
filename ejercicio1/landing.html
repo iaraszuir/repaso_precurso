@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div> <a href="./index.html"></a> LOGO</div>
+        <!--normalmente esta el home-->
+        <nav>
+            <ul>
+                <!--no se le da importancia mas a un elemento que a otro, ol seria el orden en el que tenemos que seleccionar los elementos,indice de un libro-->
+                <li><a href="#servicios">Seccion 1</a></li>
+                <li><a href="#nosotros">Seccion 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--<nombreEtiqueta atributo=""></nombreEtiqueta>ETIQUETADOBLE
+            <nombreEtiqueta atributo="">ETIQUETA SIMPLE-->
+        <h1>Landing page</h1>
+        <!--Es el titulo de la pagina,solo 1 por html-->
+        <!--display: none;si no queremos que se vea
+        pero todos los htmls tienen que tener h1-->
+        <section>
+            <!--identificador no se puede repetir,una clase si se puede repetir,id y class no solo es para dar estilos;id es para hacer unica una etiqueta,es unico-->
+            <h2 id="servicios" class="servicios">Servicios que ofrecemos</h2>
+            <article>
+                <h3>Desarrollo web</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dicta earum est nisi consectetur
+                    officiis provident iusto beatae dolore assumenda quod, expedita exercitationem inventore ab
+                    accusantium amet sed distinctio modi.</p>
+            </article>
+            <article>
+                <h3>Aplicaciones moviles</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dicta earum est nisi consectetur
+                    officiis provident iusto beatae dolore assumenda quod, expedita exercitationem inventore ab
+                    accusantium amet sed distinctio modi.</p>
+            </article>
+            <article>
+                <h3>Data Science</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dicta earum est nisi consectetur
+                    officiis provident iusto beatae dolore assumenda quod, expedita exercitationem inventore ab
+                    accusantium amet sed distinctio modi.</p>
+            </article>
+
+        </section>
+        <section>
+            <h2 id="nosotros">Sobre nosotros</h2>
+            <figure>
+                <img src="./images/shutterbug.jpg" alt="fotografa">
+            </figure>
+            <div>
+                <h3>En un lugarcito</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus maiores exercitationem dolores, saepe
+                    sint, possimus voluptates eligendi non praesentium delectus laudantium necessitatibus aut. Ab cum
+                    sit non numquam, asperiores tenetur.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022 </p>
+        <nav>
+            <!--mejor con ul-->
+            <a href="">Aviso Legal</a>
+            <a href=""> Cookies</a>
+        </nav>
+
+        <hr>
+        <!--linea horizontal-->
+
+    </footer>
+
+</body>
+
+</html>
