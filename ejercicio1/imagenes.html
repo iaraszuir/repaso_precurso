@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamiento semantico de imagenes</title>
+</head>
+
+<body>
+    <!--misma imagen,mismo efecto-->
+    <div>
+        <img src="https://www.meteorologiaenred.com/wp-content/uploads/2017/01/cielo-estrellado-830x553.jpg.webp"
+            alt="cielo estrellado">
+        <p>perrito</p>
+        <!--texto no tiene relacion con la imagen-->
+    </div>
+    <figure>
+        <img src="https://www.meteorologiaenred.com/wp-content/uploads/2017/01/cielo-estrellado-830x553.jpg.webp"
+            alt="cielo estrellado">
+        <figcaption>Perrito</figcaption>
+        <!-- este texto si tiene relacion con la imagen,se va a posicionar mejor en google-->
+    </figure>
+
+    <!--etiqueta muy concreta,cambia el tamaño en funcion del dispositivo-->
+    <picture>
+        <source media="(800px)"
+            srcset="https://p4.wallpaperbetter.com/wallpaper/299/530/421/aenami-clouds-portrait-display-power-lines-wallpaper-preview.jpg">
+        <source media="(500px)"
+            srcset="https://p4.wallpaperbetter.com/wallpaper/299/530/421/aenami-clouds-portrait-display-power-lines-wallpaper-preview.jpg">
+        <img src="https://www.meteorologiaenred.com/wp-content/uploads/2017/01/cielo-estrellado-830x553.jpg.webp"
+            alt="cielo estrellado">
+
+    </picture>
+</body>
+
+</html>
